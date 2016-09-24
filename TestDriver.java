@@ -19,7 +19,7 @@ public class TestDriver {
 		
 		for (int a = 0; a < testArray1.length; a++) {
 			if (testArray1[a] == null) {
-				System.out.println("ITS NULL BABY");
+				System.out.println("ITS NULL");
 			}
 			total += testArray1[a].operation(x, y);
 			System.out.println("TEST POINT 2." + a);
