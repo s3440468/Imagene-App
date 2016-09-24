@@ -1,4 +1,4 @@
 @FunctionalInterface
 public interface IArithmetic {
-	public int operation(int... values);
+	public int operation(int x, int y);
 }
