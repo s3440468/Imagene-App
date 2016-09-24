@@ -1,9 +1,13 @@
 public class ParserInterface {
 	
-	private IArithmetic addition = (int[] values) -> values[0] + values[1];
-	private IArithmetic subtraction = (int[] values) -> values[0] - values[1];
-	private IArithmetic multiplication = (int[] values) -> values[0] * values[1];
-	private IArithmetic division = (int[] values) -> values[0] / values[1];
+	private IArithmetic addition = (int first, int second) -> first + second;
+	private IArithmetic subtraction = (int first, int second) -> first - second;
+	private IArithmetic multiplication = (int first, int second) -> first * second;
+	private IArithmetic division = (int first, int second) -> first / second;
+	private IArithmetic squareRoot = (int first, int second) -> 
+		(int)Math.sqrt((double)(first));
+	private IArithmetic squared = (int first, int second) -> first * first;
+	private IArithmetic cubed = (int first, int second) -> first * first * first;
 	
 	public ParserInterface() {
 		
